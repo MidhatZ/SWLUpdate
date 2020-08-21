@@ -1,0 +1,1 @@
+java -jar .\SWLUpdate.jar >log.txt

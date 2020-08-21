@@ -1,0 +1,40 @@
+Date Format : Aug 21, 2020
+16
+13
+13
+MALHOTRA Manas
+PATHANIA Rishi
+MITTAL Neeraj
+ARORA Aniket
+CHAUDHARI Swapnil
+SHARMA Shruti
+DAR Nasib
+SHARMA Monika
+SINGH Abhishek
+KWATRA Akash
+SHIRUDE Shubham
+GAWADE Satish
+PUNJ Ruchika
+CHAUDHARI Swapnil = Y
+DAR Nasib = Y
+SHIRUDE Shubham = Y
+MITTAL Neeraj = Y
+SINGH Abhishek = Y
+PATHANIA Rishi = Y
+KWATRA Akash = Y
+SHARMA Ashutosh = N
+SHARMA Shruti = Y
+AGARWAL Neeraj = N
+MALHOTRA Manas = Y
+TIWARI Manish = N
+PUNJ Ruchika = Y
+GAWADE Satish = Y
+ARORA Aniket = Y
+SHARMA Monika = Y
+Hi Vikram, Ashutosh S, Neeraj A and Manish T are left.
+org.openqa.selenium.ElementClickInterceptedException: Element <button id="send-message-button" class="extension-icon-button focus-round-border ts-sym pull-left app-icons-fill-hover icons-send inset-border inset-border-round inset-border-themed compose-stripe-directive" type="button"> is not clickable at point (934,670) because another element <button class="action-button " type="button"> obscures it
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'ITEM-S72419', ip: '192.168.0.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 79.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200720193547, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 15896, moz:profile: D:\Profiles\mzehra\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: be478890-717f-41a2-9d6e-754a3e77268b
