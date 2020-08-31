@@ -2,10 +2,17 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.io.File;
+import java.io.PrintStream;
+import java.io.PrintWriter;
+import java.io.StringWriter;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.text.DateFormat;
 import java.util.*;
 
@@ -14,6 +21,28 @@ public class TestClass {
         Date currentDate = new Date();
         String  dateToStr = DateFormat.getDateInstance().format(currentDate);
         System.out.println("Date Format : "+dateToStr);
+
+        Path currentDir = Paths.get("");
+        File logFile = new File(currentDir.toAbsolutePath()+"\\logFile.txt");
+        PrintStream ps = new PrintStream(logFile);
+
+        try{
+            throw new ArrayIndexOutOfBoundsException();
+        }
+        catch(Exception ex){
+
+            StringWriter sw = new StringWriter();
+            ex.printStackTrace(new PrintWriter(sw));
+            String exceptionAsString = sw.toString();
+            System.out.println(exceptionAsString);
+            ps.write(exceptionAsString.getBytes());
+            ps.close();
+        }
+
+
+      //  WebDriver driver = new ChromeDriver();
+        
+        
       /*  System.setProperty("webdriver.gecko.driver", "c:\\geckodriver.exe");
         WebDriver driver = new FirefoxDriver();
         driver.manage().window().maximize();

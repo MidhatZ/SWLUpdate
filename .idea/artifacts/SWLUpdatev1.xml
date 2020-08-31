@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="SWLUpdatev1">
+    <output-path>$PROJECT_DIR$/out/artifacts/SWLUpdatev1</output-path>
+    <root id="archive" name="SWLUpdatev1.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/out/artifacts/Project2_jar/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>
